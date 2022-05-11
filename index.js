@@ -2,6 +2,8 @@ const express = require('express');
 const request = require('request');
 const cheerio = require('cheerio');
 const flussonic = require('./plugins/flussonic');
+
+const port = process.env.PORT || 4444;
 const app = express();
 
 
@@ -34,6 +36,6 @@ app.get('/stream', (req, res) => {
 
 app.use('/flussonic', flussonic)
 
-app.listen(4444, () => {
+app.listen(, () => {
     console.log('Server is running on port 4444');
 });
