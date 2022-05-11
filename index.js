@@ -36,6 +36,6 @@ app.get('/stream', (req, res) => {
 
 app.use('/flussonic', flussonic)
 
-app.listen(, () => {
+app.listen(port, () => {
     console.log('Server is running on port 4444');
 });
